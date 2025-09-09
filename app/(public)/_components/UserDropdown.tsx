@@ -44,7 +44,7 @@ export function UserDropdown({ name, email, image }: iAppProps) {
           />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="center" className="max-w-64">
+      <DropdownMenuContent align="end" className="max-w-48">
         <DropdownMenuLabel className="flex min-w-0 flex-col">
           <span className="text-foreground truncate text-sm font-medium">
             {name}
@@ -82,7 +82,7 @@ export function UserDropdown({ name, email, image }: iAppProps) {
         <DropdownMenuItem onClick={handleSignout}>
           <LogOutIcon size={16} className="opacity-60" aria-hidden="true" />
           <span>Logout</span>
-        </DropdownMenuItem>
+        </DropdownMenuItem> 
       </DropdownMenuContent>
     </DropdownMenu>
   );
